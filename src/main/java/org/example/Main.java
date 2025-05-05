@@ -15,7 +15,7 @@ public class Main {
         tabuada(376);
         exerciceSub(2,3);
         exerciceSub(5,2);
-        exerciceSub(5,6);
+
     }
 
     public static void exerciceSoma(double var1, double var2){
