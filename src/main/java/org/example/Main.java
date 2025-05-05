@@ -15,11 +15,17 @@ public class Main {
         tabuada(376);
         exerciceSub(2,3);
         exerciceSub(5,2);
+        exerciceMult(4,4);
 
     }
 
     public static void exerciceSoma(double var1, double var2){
         var result = var1 + var2;
+        System.out.println(result);
+    }
+
+    public static void exerciceMult(double var1, double var2){
+        var result = var1 * var2;
         System.out.println(result);
     }
 
