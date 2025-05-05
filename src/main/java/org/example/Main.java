@@ -13,6 +13,8 @@ public class Main {
         exercicePar(3);
         tabuada(5);
         tabuada(376);
+        exerciceSub(2,3);
+        exerciceSub(5,2);
 
     }
 
@@ -20,6 +22,12 @@ public class Main {
         var result = var1 + var2;
         System.out.println(result);
     }
+
+    public static void exerciceSub(double var1, double var2){
+        var result = var1 - var2;
+        System.out.println(result);
+    }
+
 
 
     public static void exercicePar(double var){
