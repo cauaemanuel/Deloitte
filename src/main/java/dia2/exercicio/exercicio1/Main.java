@@ -1,4 +1,4 @@
-package exercice1;
+package dia2.exercicio.exercicio1;
 
 import static java.io.IO.println;
 

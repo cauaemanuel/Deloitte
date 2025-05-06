@@ -1,4 +1,4 @@
-package exercice2;
+package dia2.exercicio.exercice2;
 
 public class Pessoa {
 
@@ -35,6 +35,7 @@ public class Pessoa {
         cpf = cpf.replaceAll("[^0-9]", "");
         if(cpf.length() == 11){
             this.cpf = cpf;
+
         } else {
             throw new RuntimeException("CPF invalido");
         }

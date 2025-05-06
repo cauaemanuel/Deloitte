@@ -1,4 +1,4 @@
-package exercice2;
+package dia2.exercicio.exercice2;
 
 public class Produto {
 
