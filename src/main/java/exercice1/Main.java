@@ -9,8 +9,13 @@ public class Main {
         System.out.println(pessoa.deMaior());
         System.out.println(pessoaAux.deMaior());
 
-        if (pessoa.getIdade() < pessoaAux.getIdade()){
+        if (pessoa.getIdade() > pessoaAux.getIdade()){
             System.out.println(pessoa.getNome() + " é maior que o " + pessoaAux.getNome());
         }
+
+        if (pessoaAux.getIdade() > pessoa.getIdade()){
+            System.out.println(pessoaAux.getNome() + " é maior que o " + pessoa.getNome());
+        }
+
     }
 }
