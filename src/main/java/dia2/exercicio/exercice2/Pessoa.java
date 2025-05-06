@@ -32,10 +32,10 @@ public class Pessoa {
     }
 
     public void setCpf(String cpf) {
-        cpf = cpf.replaceAll("[^0-9]", "");
-        if(cpf.length() == 11){
-            this.cpf = cpf;
 
+        var cpfAux = cpf.replaceAll("[^0-9]", "");
+        if(cpf.length() == 11 && cpfAux.length() == 11){
+            this.cpf = cpf;
         } else {
             throw new RuntimeException("CPF invalido");
         }
