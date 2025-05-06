@@ -8,6 +8,10 @@ public class Produto {
         return preco = preco * 0.95;// Desconto de 5%
     }
 
+    public double aplicarDesconto(double desconto){
+        return preco = preco - (preco * (desconto / 100));// Desconto com valor do parametro
+    }
+
     public Produto(double preco) {
         this.preco = preco;
     }

@@ -11,8 +11,9 @@ public class Main {
                 65.0,
                 1.60,
                 "12345678999");
-        println(pessoa.getCpf());
-        println(pessoa.IMC());
-        println(produto.aplicarDesconto());
+        println("Seu cpf: " + pessoa.getCpf());
+        println("Seu IMC: "+ pessoa.IMC());
+        println("Seu Desconto: "+ produto.aplicarDesconto(15));
+        println("Seu Desconto Padrão: " + produto.aplicarDesconto());
     }
 }
