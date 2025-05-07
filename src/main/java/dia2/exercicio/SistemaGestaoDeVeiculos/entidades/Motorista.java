@@ -8,7 +8,7 @@ public class Motorista {
 
     public Motorista(String nome, String CNH, Veiculo veiculo_atual) {
         this.nome = nome;
-        this.CNH = CNH;
+        setCNH(CNH);
         this.veiculo_atual = veiculo_atual;
     }
 
@@ -37,7 +37,13 @@ public class Motorista {
     }
 
     public void setCNH(String CNH) {
-        this.CNH = CNH;
+
+        var cnhAux = CNH.replaceAll("[^0-9]", "");
+        if(CNH.length() == 9 && cnhAux.length() == 9){
+            this.CNH = CNH;
+        } else {
+            throw new RuntimeException("CNH invalida");
+        }
     }
 
     public Veiculo getVeiculo_atual() {

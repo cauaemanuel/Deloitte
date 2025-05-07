@@ -12,8 +12,8 @@ public class Main {
         var carro = new Carro("Volvo", "XC60", 2018, 4);
         var caminhao = new Caminhao("Volkswagen", "24-250", 2018, 1000);
 
-        var motoristaCaminhao = new Motorista("Jorge", "12232112", caminhao);
-        var motoristaCarro = new Motorista("Douglas", "122322322", carro);
+        var motoristaCaminhao = new Motorista("Jorge", "122321129", caminhao);
+        var motoristaCarro = new Motorista("Douglas", "123456789", carro);
 
         motoristaCarro.getVeiculo_atual().exibir_info();
         motoristaCaminhao.getVeiculo_atual().exibir_info();
