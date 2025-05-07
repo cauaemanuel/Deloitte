@@ -24,6 +24,6 @@ public class Carro extends Veiculo{
 
     @Override
     public String toString() {
-        return super.toString() + " num_portas=" + num_portas;
+        return super.toString() + " num_portas = " + num_portas;
     }
 }

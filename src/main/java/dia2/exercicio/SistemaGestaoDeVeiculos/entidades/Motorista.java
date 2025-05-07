@@ -6,6 +6,11 @@ public class Motorista {
     private String CNH;
     private Veiculo veiculo_atual = null;
 
+    public Motorista(String nome, String CNH, Veiculo veiculo_atual) {
+        this.nome = nome;
+        this.CNH = CNH;
+        this.veiculo_atual = veiculo_atual;
+    }
 
     public Veiculo atribuir_veiculo(Veiculo veiculo){
        return veiculo_atual = veiculo;

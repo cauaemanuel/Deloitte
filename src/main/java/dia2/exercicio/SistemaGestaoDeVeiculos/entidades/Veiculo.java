@@ -7,19 +7,24 @@ public abstract class Veiculo {
     private int ano;
     private double velocidade = 0.0;
 
-    void acelerar() {
+    public void acelerar() {
         setVelocidade(getVelocidade() + 10);
+        System.out.println(modelo +" acelerando;" +
+                " velocidade atual: "+ velocidade );
     }
 
-    void frear(){
+    public void frear(){
         if (getVelocidade() - 10  <= 0){
-            System.out.println("Carro na Parado");
+            System.out.println(modelo + "está Parado");
+            System.out.println();
         } else {
             setVelocidade(getVelocidade() - 10);
+            System.out.println(modelo + " está freando");
+            System.out.println();
         }
     };
 
-    String exibir_info(){
+    public String exibir_info(){
        return toString();
     };
 

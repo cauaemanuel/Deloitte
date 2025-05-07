@@ -10,7 +10,7 @@ public class Caminhao extends Veiculo{
     }
 
     @Override
-    String exibir_info() {
+    public String exibir_info() {
         return toString();
     }
 
