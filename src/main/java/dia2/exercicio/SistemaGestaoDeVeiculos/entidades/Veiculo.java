@@ -8,19 +8,17 @@ public abstract class Veiculo {
     private double velocidade = 0.0;
 
     public void acelerar() {
-        setVelocidade(getVelocidade() + 10);
+        velocidade += 10;
         System.out.println(modelo +" acelerando;" +
                 " velocidade atual: "+ velocidade );
     }
 
     public void frear(){
-        if (getVelocidade() - 10  <= 0){
+        if (velocidade - 10  <= 0){
             System.out.println(modelo + "está Parado");
-            System.out.println();
         } else {
-            setVelocidade(getVelocidade() - 10);
+            velocidade -= 10;
             System.out.println(modelo + " está freando");
-            System.out.println();
         }
     };
 
@@ -32,6 +30,15 @@ public abstract class Veiculo {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
+    }
+
+    @Override
+    public String toString() {
+        return "Veiculo: " +
+                "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", ano=" + ano +
+                ", velocidade=" + velocidade;
     }
 
     public String getMarca() {
@@ -60,18 +67,5 @@ public abstract class Veiculo {
 
     public double getVelocidade() {
         return velocidade;
-    }
-
-    public void setVelocidade(double velocidade) {
-        this.velocidade = velocidade;
-    }
-
-    @Override
-    public String toString() {
-        return "Veiculo: " +
-                "marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", ano=" + ano +
-                ", velocidade=" + velocidade;
     }
 }

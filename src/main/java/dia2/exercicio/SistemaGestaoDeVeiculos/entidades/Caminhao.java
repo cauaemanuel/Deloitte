@@ -11,11 +11,6 @@ public class Caminhao extends Veiculo{
 
     @Override
     public String exibir_info() {
-        return toString();
-    }
-
-    @Override
-    public String toString() {
         return super.toString() +
                 " capacidade_carga=" + capacidade_carga;
     }

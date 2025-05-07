@@ -11,7 +11,7 @@ public class Carro extends Veiculo{
 
     @Override
     public String exibir_info() {
-        return toString();
+        return super.toString() + " num_portas = " + num_portas;
     }
 
     public int getNum_portas() {
@@ -22,8 +22,4 @@ public class Carro extends Veiculo{
         this.num_portas = num_portas;
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + " num_portas = " + num_portas;
-    }
 }

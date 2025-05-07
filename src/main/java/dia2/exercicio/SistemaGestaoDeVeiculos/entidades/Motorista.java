@@ -21,7 +21,10 @@ public class Motorista {
     }
 
     public void dirigir(){
-        System.out.println(nome + " " + veiculo_atual.getModelo());
+        if (veiculo_atual != null){
+            System.out.println(nome + " " + veiculo_atual.getModelo());
+        }
+        System.out.println(nome + " não tem veiculo");
     }
 
     public String getNome() {
@@ -37,7 +40,6 @@ public class Motorista {
     }
 
     public void setCNH(String CNH) {
-
         var cnhAux = CNH.replaceAll("[^0-9]", "");
         if(CNH.length() == 9 && cnhAux.length() == 9){
             this.CNH = CNH;
@@ -50,7 +52,4 @@ public class Motorista {
         return veiculo_atual;
     }
 
-    public void setVeiculo_atual(Veiculo veiculo_atual) {
-        this.veiculo_atual = veiculo_atual;
-    }
 }

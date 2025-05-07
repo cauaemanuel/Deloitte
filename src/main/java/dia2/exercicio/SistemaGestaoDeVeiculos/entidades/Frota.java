@@ -6,7 +6,7 @@ import java.util.List;
 public class Frota {
 
     private List<Veiculo> veiculos = new ArrayList<>();
-    private List<Motorista> motoristas=new ArrayList<>();
+    private List<Motorista> motoristas = new ArrayList<>();
 
     public Frota(List<Veiculo> veiculos, List<Motorista> motoristas) {
         this.veiculos = veiculos;
@@ -21,20 +21,9 @@ public class Frota {
                 });
     }
 
-    public Veiculo adicionar_veiculo(Veiculo veiculo){
-        veiculos.add(veiculo);
-        return veiculo;
-    }
-
-    public Motorista adicionar_motorista(Motorista motorista){
-        motoristas.add(motorista);
-        return motorista;
-    }
-
     public void listarFrota(){
-       veiculos.stream()
+        veiculos.stream()
                 .forEach(v -> {
-
                     motoristas.stream()
                             .filter(p -> p.getVeiculo_atual().equals(v))
                             .findFirst()
@@ -45,4 +34,15 @@ public class Frota {
                             });
                 });
     }
+
+    public Veiculo adicionar_veiculo(Veiculo veiculo){
+        veiculos.add(veiculo);
+        return veiculo;
+    }
+
+    public Motorista adicionar_motorista(Motorista motorista){
+        motoristas.add(motorista);
+        return motorista;
+    }
+
 }

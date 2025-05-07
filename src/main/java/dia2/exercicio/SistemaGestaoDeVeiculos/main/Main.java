@@ -27,9 +27,9 @@ public class Main {
         motoristaCarro.getVeiculo_atual().frear();
 
         var frota = new Frota(List.of(motoristaCaminhao, motoristaCarro));
+
         frota.adicionar_veiculo(new Carro("Hyndai", "HB20", 2019, 4));
 
         frota.listarFrota();
-
     }
 }
